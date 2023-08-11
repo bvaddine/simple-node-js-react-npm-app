@@ -4,6 +4,7 @@ pipeline {
     environment {
         NODE_VERSION = '8.16.1'
     }
+    tools {nodejs "nodejs"}
 
     stages {
         stage('Checkout') {
