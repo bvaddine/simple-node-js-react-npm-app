@@ -15,11 +15,7 @@ pipeline {
         
         stage('Install Dependencies') {
             steps {
-                sh '''
-                    nvm install 20.5.1
-                    nvm use 20.5.1
-                    npm install
-                '''
+                sh 'npm install'
             }
         }
 
